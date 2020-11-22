@@ -1,0 +1,59 @@
+.post-card {
+    padding: 2rem 1.5rem;
+    background: $light-color;
+    margin-bottom: 2rem;
+
+    &__header {
+
+        h2 {
+            margin: 0;
+            padding-bottom: 2rem;
+            text-align: left;
+
+            a {
+                text-decoration: none;
+                color: $dark-color;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        &__meta {
+            font-size: 1.1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        img {
+            max-height: 30rem;
+            max-width: 100%;
+        }
+    }
+
+    &__summary {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+
+        a {
+            color: $primary-color;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+    &__footer {
+
+        p {
+            margin: 0.5rem 0;
+
+            .fas {
+                opacity: 30%;
+            }
+
+            span {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

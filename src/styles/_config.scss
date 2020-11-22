@@ -1,0 +1,69 @@
+$primary-color: #1fa2b6;
+$dark-color: #11161b;
+$light-color: #ffffff;
+$danger-color: #dc3545;
+$success-color: #28a745;
+$background-color: rgb(238, 238, 238);
+$max-width: 1200px;
+
+
+.btn {
+    padding: 0.25rem 0.8rem;
+    font-size: 1.3rem;
+    border-bottom: $light-color 2px solid;
+
+    &:hover {
+        border-bottom: $primary-color 2px solid;
+        transition: 1s;
+        color: $primary-color;
+    }
+}
+
+// margin & padding
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    // All around margin 
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    // Vertical margin
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+     // All around padding 
+     .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    // Vertical padding
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    } 
+}
+
+// Text Styles
+.x-large {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.large {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem; 
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+}
+
+.text-primary {
+    color: $primary-color;
+}
